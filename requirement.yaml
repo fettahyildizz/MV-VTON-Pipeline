@@ -1,0 +1,41 @@
+name: mv-vton-pip
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - ffmpeg
+  - libgcc-ng
+  - libstdcxx-ng
+  - pip:
+      # NOTE: pip cannot install Python itself; Python is set by conda above.
+      # If torch==2.8.0 is not available for your CUDA/Python combo, pip will fail.
+      # In that case, replace with an available version (e.g. 2.1.2/2.2.2) and matching torchvision.
+      - torch==2.8.0
+      - torchvision
+      - torchaudio
+
+      # Core runtime deps used by MV-VTON
+      - diffusers==0.20.0
+      - transformers==4.27.3
+      # - huggingface-hub==0.19.4
+      - huggingface-hub==0.23.0
+      - safetensors
+      - accelerate
+      - clip==0.2.0
+
+      - omegaconf==2.3.0
+      - einops
+      - matplotlib
+      - pillow
+      - numpy
+      - opencv-python-headless
+      - tqdm
+      - pytorch-lightning==1.4.2
+      - kornia
+      - albumentations
+      - taming-transformers==0.0.1
+      - torchmetrics==0.6.0

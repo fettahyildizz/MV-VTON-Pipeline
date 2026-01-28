@@ -1,0 +1,46 @@
+
+# ----------------------------
+# Python / OS junk
+# ----------------------------
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.Python
+.DS_Store
+
+# ----------------------------
+# Large model / checkpoint files (do not commit)
+# ----------------------------
+**/*.ckpt
+**/*.pth
+**/*.pt
+**/*.bin
+**/*.safetensors
+
+# Export / accelerator artifacts
+**/*.onnx
+**/*.engine
+**/*.plan
+**/*.trt
+**/*.tensorrt
+
+# ----------------------------
+# Common experiment outputs
+# ----------------------------
+**/outputs/
+**/results/
+**/logs/
+**/runs/
+**/wandb/
+
+# MV-VTON / diffusion caches
+**/.cache/
+
+# If you have local datasets inside the repo, keep them ignored
+**/datasets/
+**/data/
+
+MV-VTON/images/*
+Self-Correction-Human-Parsing/images/*
+pytorch-openpose/images/*
