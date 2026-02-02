@@ -50,7 +50,7 @@ python MV-VTON/inference.py \
     --openpose-model-dir pytorch-openpose/model \
     --schp-ckpt Self-Correction-Human-Parsing/models/atr-schp-201908301523-atr.pth \
     --single-folder single_1 \
-    --ddim_steps 30 \
+    --ddim_steps 50 \
 ```
 
 Notes:

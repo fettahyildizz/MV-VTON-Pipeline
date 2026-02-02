@@ -1013,7 +1013,7 @@ def main() -> None:
 		help="Run a single sample by dataset index (0-based). Ignored if --folder is set.",
 	)
 
-	parser.add_argument("--ddim_steps", type=int, default=30)
+	parser.add_argument("--ddim_steps", type=int, default=50)
 	parser.add_argument("--ddim_eta", type=float, default=0.0)
 	parser.add_argument("--plms", action="store_true")
 	parser.add_argument("--fixed_code", action="store_true")
